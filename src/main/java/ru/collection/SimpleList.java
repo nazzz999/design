@@ -10,5 +10,4 @@ public interface SimpleList<T> extends Iterable<T> {
     T get(int index);
 
     int size();
-
 }
