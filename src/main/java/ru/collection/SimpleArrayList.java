@@ -30,7 +30,7 @@ public class SimpleArrayList<T> implements SimpleList<T> {
 
     @Override
     public T remove(int index) {
-        T oldValue = container[Objects.checkIndex(index, size)];
+        T oldValue = set(index, null);
         int elementsToMove = size - index - 1;
         if (elementsToMove > 0) {
             System.arraycopy(container, index + 1, container, index, elementsToMove);
