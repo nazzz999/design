@@ -23,14 +23,14 @@ public class SimpleArrayList<T> implements SimpleList<T> {
 
     @Override
     public T set(int index, T newValue) {
-        T oldValue = container[Objects.checkIndex(index, size)];
+        T oldValue = get(index);
         container[index] = newValue;
         return oldValue;
     }
 
     @Override
     public T remove(int index) {
-        T oldValue = set(index, null);
+        T oldValue = get(index);
         int elementsToMove = size - index - 1;
         if (elementsToMove > 0) {
             System.arraycopy(container, index + 1, container, index, elementsToMove);
