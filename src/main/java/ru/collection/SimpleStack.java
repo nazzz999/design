@@ -13,6 +13,6 @@ public class SimpleStack<T> {
     }
 
     public boolean isEmpty() {
-        return linked.setSize()== 0;
+        return linked.setSize() == 0;
     }
 }
