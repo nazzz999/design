@@ -17,12 +17,10 @@ public class EvenNumberFile {
                     int number = Integer.parseInt(numberStr.trim());
                     if (number % 2 == 0) {
                         System.out.println(number + " четное число.");
-                    }
-                    else {
+                    } else {
                         System.out.println(number + " нечетное число.");
                     }
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     System.out.println(numberStr + " is not a valid number.");
                 }
             }
